@@ -63,6 +63,10 @@ class PrinterBluetoothManager {
     });
   }
 
+  bool get isPrinting {
+    return _isPrinting;
+  }
+  
   void stopScan() async {
     await _bluetoothManager.stopScan();
   }
